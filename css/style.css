@@ -1078,6 +1078,58 @@ a:focus {
     grid-column: auto auto;
   }
 }
+.our-advantages.style2:after {
+  content: none;
+}
+.our-advantages.style2 .title-wrap {
+  max-width: 850px;
+  width: 100%;
+  margin: 0 auto 50px;
+}
+.our-advantages.style2 .title-wrap .main-title {
+  text-align: center;
+  margin-bottom: 32px;
+}
+@media (max-width: 767px) {
+  .our-advantages.style2 .title-wrap {
+    margin-bottom: 24px;
+  }
+}
+.our-advantages.style2 .title-wrap p {
+  font-size: 22px;
+  color: #515d73;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .our-advantages.style2 .title-wrap p {
+    font-size: 18px;
+  }
+}
+.our-advantages.style2 .our-advantages-items {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media (max-width: 1300px) {
+  .our-advantages.style2 .our-advantages-items {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.our-advantages.style2 .our-advantages-items .our-advantages-item {
+  grid-column: inherit;
+  grid-row: inherit;
+}
+.our-advantages.style2 .our-advantages-items .our-advantages-item .top-info h4 {
+  font-size: 31px;
+}
+@media (max-width: 1850px) {
+  .our-advantages.style2 .our-advantages-items .our-advantages-item .top-info h4 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .our-advantages.style2 .our-advantages-items .our-advantages-item .top-info h4 {
+    font-size: 18px;
+  }
+}
 
 .banner {
   background: #10141c;
@@ -4615,9 +4667,38 @@ a:focus {
 }
 .our-work.black-theme {
   background: #10141c;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+.our-work.black-theme:after {
+  content: "";
+  background: url(../img/our-work-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+@media (max-width: 767px) {
+  .our-work.black-theme:after {
+    top: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 .our-work.black-theme .wrapper .our-work-item {
   max-width: 630px;
+}
+@media (max-width: 767px) {
+  .our-work.black-theme .wrapper .our-work-item {
+    max-width: 100%;
+    background: #10141c;
+  }
 }
 .our-work.black-theme .wrapper .our-work-item p {
   color: white;
@@ -4741,6 +4822,92 @@ a:focus {
   margin: auto;
   max-width: 100%;
   max-height: 100%;
+}
+
+.advantage-advertising {
+  background: white;
+  padding: 120px 0;
+}
+@media (max-width: 1024px) {
+  .advantage-advertising {
+    padding: 100px 0;
+  }
+}
+@media (max-width: 767px) {
+  .advantage-advertising {
+    padding: 50px 0;
+  }
+}
+.advantage-advertising .main-title {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 70px;
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .advantage-advertising .main-title {
+    margin-bottom: 50px;
+  }
+}
+.advantage-advertising .info {
+  border: 1px solid #c8d1e3;
+  border-radius: 8px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  .advantage-advertising .info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border-left: 8px solid #64ff03;
+  }
+}
+.advantage-advertising .info p {
+  padding: 20px;
+  padding-left: 50px;
+  border-left: 8px solid #64ff03;
+  max-width: 1080px;
+  font-size: 22px;
+  color: #515d73;
+  line-height: 140%;
+}
+@media (max-width: 1200px) {
+  .advantage-advertising .info p {
+    padding-left: 30px;
+  }
+}
+@media (max-width: 1024px) {
+  .advantage-advertising .info p {
+    border: none;
+    padding: 20px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .advantage-advertising .info p {
+    font-size: 16px;
+  }
+}
+.advantage-advertising .info img {
+  max-width: 100%;
+  max-height: 100%;
+  margin-right: 50px;
+}
+@media (max-width: 1200px) {
+  .advantage-advertising .info img {
+    margin-right: 20px;
+  }
 }
 
 .geo-advertising {
@@ -5204,6 +5371,9 @@ a:focus {
   .suitable-advertising .wrapper .suitable-items .suitable-item p {
     font-size: 16px;
   }
+}
+.suitable-advertising.style2 .suitable-items .suitable-item p {
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
