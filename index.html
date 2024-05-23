@@ -662,5 +662,21 @@
     <script src="js/jquery.validate.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/script.js"></script>
+
+    <script>
+      const logosContainer = document.querySelector(".logos-container");
+
+      logosContainer.innerHTML += logosContainer.innerHTML;
+
+      function scrollLogos() {
+        logosContainer.scrollLeft += 1;
+
+        if (logosContainer.scrollLeft >= logosContainer.scrollWidth / 2) {
+          logosContainer.scrollLeft = 0;
+        }
+      }
+
+      setInterval(scrollLogos, 30);
+    </script>
   </body>
 </html>

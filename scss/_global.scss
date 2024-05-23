@@ -160,36 +160,6 @@ a {
   transform: translateY(1px) rotate(-45deg);
 }
 
-.slick-dots {
-  li {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    margin: 0 4px;
-    button {
-      width: 10px;
-      height: 10px;
-      opacity: 1;
-      &:before {
-        content: "";
-        width: 10px;
-        height: 10px;
-        opacity: 1;
-        border-radius: 50%;
-        transition: 0.3s;
-        background: #d9d9d9;
-      }
-    }
-    &.slick-active {
-      button {
-        &:before {
-          background: green;
-        }
-      }
-    }
-  }
-}
-
 .select-wrap {
   position: relative;
   select {
