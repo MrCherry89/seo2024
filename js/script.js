@@ -19,7 +19,7 @@ $(document).ready(function () {
           slidesToShow: 1,
           variableWidth: true,
           dots: true,
-          speed: 800,
+          speed: 500,
           autoplay: true,
           autoplaySpeed: 2000,
         },
