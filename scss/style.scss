@@ -1539,23 +1539,9 @@
     @include flex;
     margin-bottom: -15px;
     align-items: center;
-    white-space: nowrap;
-    overflow: hidden;
     position: relative;
     background: white;
-    img {
-      display: inline-block;
-      width: 100%;
-      margin-left: 0px;
-      background: white;
-      @media (max-width: 1200px) {
-        width: 200vw;
-      }
-      &:nth-child(even) {
-        position: relative;
-        z-index: 1;
-      }
-    }
+    width: 120%;
     @media (max-width: 1500px) {
       margin-bottom: -0.9vw;
     }
@@ -1563,6 +1549,13 @@
       margin-top: 50px;
       min-width: 767px;
       margin-bottom: 0;
+    }
+    img {
+      display: inline-block;
+      width: 100%;
+      margin-left: -10%;
+      @media (max-width: 1200px) {
+      }
     }
   }
 }

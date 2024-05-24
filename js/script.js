@@ -180,6 +180,31 @@ $(document).ready(function () {
     minimumResultsForSearch: -1,
   });
 
+  const windowWidth = window.innerWidth;
+
+  if (windowWidth <= 768) {
+    gsap.to(".bg img", {
+      x: "10%",
+      scrollTrigger: {
+        x: "-10%",
+        trigger: ".why-us",
+        start: "-20%",
+        end: "bottom 20%",
+        scrub: 4,
+      },
+    });
+  } else {
+    gsap.to(".bg img", {
+      x: "10%",
+      scrollTrigger: {
+        x: "-10%",
+        trigger: ".why-us",
+        start: "-20%",
+        end: "bottom 20%",
+        scrub: 4,
+      },
+    });
+  }
   // $(".trending-slider").slick({
   //   dots: false,
   //   arrows: true,

@@ -2670,25 +2670,9 @@ a:focus {
   display: flex;
   margin-bottom: -15px;
   align-items: center;
-  white-space: nowrap;
-  overflow: hidden;
   position: relative;
   background: white;
-}
-.why-us .bg img {
-  display: inline-block;
-  width: 100%;
-  margin-left: 0px;
-  background: white;
-}
-@media (max-width: 1200px) {
-  .why-us .bg img {
-    width: 200vw;
-  }
-}
-.why-us .bg img:nth-child(even) {
-  position: relative;
-  z-index: 1;
+  width: 120%;
 }
 @media (max-width: 1500px) {
   .why-us .bg {
@@ -2702,7 +2686,11 @@ a:focus {
     margin-bottom: 0;
   }
 }
-
+.why-us .bg img {
+  display: inline-block;
+  width: 100%;
+  margin-left: -10%;
+}
 .stages-bottom-info {
   margin-top: 60px;
   border: 1px solid #64ff03;
