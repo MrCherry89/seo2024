@@ -2820,7 +2820,7 @@
             }
           }
         }
-        &:hover {
+        &.active {
           background: #10141c;
           &:after {
             opacity: 1;

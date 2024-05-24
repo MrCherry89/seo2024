@@ -4202,20 +4202,20 @@ a:focus {
     font-size: 24px;
   }
 }
-.full-construction .wrapper .full-construction-items .full-construction-item:hover {
+.full-construction .wrapper .full-construction-items .full-construction-item.active {
   background: #10141c;
 }
-.full-construction .wrapper .full-construction-items .full-construction-item:hover:after {
+.full-construction .wrapper .full-construction-items .full-construction-item.active:after {
   opacity: 1;
 }
-.full-construction .wrapper .full-construction-items .full-construction-item:hover .number {
+.full-construction .wrapper .full-construction-items .full-construction-item.active .number {
   color: rgba(100, 255, 3, 0.3);
 }
-.full-construction .wrapper .full-construction-items .full-construction-item:hover p {
+.full-construction .wrapper .full-construction-items .full-construction-item.active p {
   color: #64ff03;
 }
-.full-construction .wrapper .full-construction-items .full-construction-item:hover .price .text,
-.full-construction .wrapper .full-construction-items .full-construction-item:hover .price b {
+.full-construction .wrapper .full-construction-items .full-construction-item.active .price .text,
+.full-construction .wrapper .full-construction-items .full-construction-item.active .price b {
   color: white;
 }
 .full-construction .wrapper .or {
