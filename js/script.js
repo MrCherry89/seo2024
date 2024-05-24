@@ -27,6 +27,25 @@ $(document).ready(function () {
     ],
   });
 
+  $(".popup").magnificPopup({
+    type: "inline",
+    mainClass: "mfp-fade",
+  });
+
+  // const logosContainer = document.querySelector(".logos-container");
+
+  // logosContainer.innerHTML += logosContainer.innerHTML;
+
+  // function scrollLogos() {
+  //   logosContainer.scrollLeft += 1;
+
+  //   if (logosContainer.scrollLeft >= logosContainer.scrollWidth / 2) {
+  //     logosContainer.scrollLeft = 0;
+  //   }
+  // }
+
+  // setInterval(scrollLogos, 30);
+
   // $(".radios .radio-wrap.right").on("click", function () {
   //   $(this).closest(".radios").addClass("active");
   // });
@@ -157,9 +176,9 @@ $(document).ready(function () {
   //   errorPlacement: function (error, element) {},
   // });
 
-  // $(".select-wrap select").select2({
-  //   minimumResultsForSearch: -1,
-  // });
+  $(".select-wrap select").select2({
+    minimumResultsForSearch: -1,
+  });
 
   // $(".trending-slider").slick({
   //   dots: false,
@@ -218,11 +237,6 @@ $(document).ready(function () {
   //       },
   //     },
   //   ],
-  // });
-
-  // $(".popup").magnificPopup({
-  //   type: "inline",
-  //   mainClass: "mfp-fade",
   // });
 
   // // Функция для отключения прокрутки страницы

@@ -160,6 +160,91 @@ a {
   transform: translateY(1px) rotate(-45deg);
 }
 
+#calculator-popup {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  .popup-body {
+    border-radius: 8px;
+    background: white;
+    padding: 60px 40px;
+    position: relative;
+    z-index: 0;
+    @media (max-width: 767px) {
+      padding: 60px 20px 50px;
+    }
+    .mfp-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 28px;
+      height: 28px;
+      &:after {
+        content: "";
+        width: 28px;
+        height: 28px;
+        top: 0;
+        left: 0;
+        position: absolute;
+        z-index: -1;
+        background: url(../img/close-popup.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+      &:before {
+        content: none;
+      }
+    }
+    .form {
+      text-align: center;
+      h3 {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 600;
+        color: #000;
+        margin-bottom: 60px;
+        @media (max-width: 767px) {
+          font-size: 32px;
+          margin-bottom: 40px;
+        }
+      }
+      .select-wrap {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .green-btn {
+        max-width: 280px;
+        width: 100%;
+        margin: 30px auto 0;
+        @media (max-width: 767px) {
+          margin-top: 10px;
+        }
+      }
+      input {
+        margin-bottom: 20px;
+        border-radius: 8px;
+        border: 1px solid rgba(#515d73, 0.2);
+        width: 100%;
+        height: 64px;
+        padding: 0 20px;
+        font-size: 20px;
+        @include placeholder {
+          color: rgba(#2d2a48, 0.6);
+          font-size: 20px;
+        }
+        @media (max-width: 767px) {
+          height: 50px;
+          font-size: 18px;
+          @include placeholder {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
 .select-wrap {
   position: relative;
   select {
@@ -184,8 +269,8 @@ a {
     background: white;
     transition: 0.3s;
     height: 100%;
-    border-radius: 14px;
-
+    border-radius: 8px;
+    border: 1px solid rgba(#515d73, 0.2);
     &:focus {
       outline: none;
     }
@@ -194,12 +279,12 @@ a {
   .select2-container .select2-selection--single .select2-selection__rendered {
     font-size: 18px;
     padding: 10px 20px;
-    height: 60px;
-    line-height: 42px;
+    height: 64px;
+    line-height: 48px;
     color: #979797;
     transition: 0.3s;
     @media (max-width: 767px) {
-      height: 44px;
+      height: 50px;
       font-size: 16px;
       line-height: inherit;
       @include flex;
@@ -208,8 +293,8 @@ a {
   }
 
   .select2-selection__arrow {
-    width: 16px !important;
-    height: 16px !important;
+    width: 32px !important;
+    height: 32px !important;
     top: 53% !important;
     right: 15px !important;
     transform: translateY(-50%);
@@ -218,12 +303,12 @@ a {
 
     b {
       background: url(../img/select-arrow.svg) no-repeat center center;
-      width: 16px !important;
-      height: 16px !important;
+      width: 32px !important;
+      height: 32px !important;
       border: none !important;
       transition: 0.2s;
-      margin-top: -8px !important;
-      margin-left: -8px !important;
+      left: 0 !important;
+      top: 0 !important;
     }
   }
 
@@ -252,7 +337,7 @@ a {
   .select2-results__option--highlighted[aria-selected] {
   font-size: 16px;
   background: white;
-  color: green;
+  color: $green;
   font-weight: 400;
   transition: 0s;
 }
@@ -372,7 +457,7 @@ a {
   }
   &:hover {
     .icon {
-      background: #0e6131;
+      background: $green;
       svg {
         fill: white;
       }

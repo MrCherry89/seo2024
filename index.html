@@ -31,7 +31,7 @@
               <li><a href="#">Контакты</a></li>
             </ul>
           </div>
-          <a href="#" class="border-btn">Контакты</a>
+          <a href="#" class="border-btn">Связаться с нами</a>
           <div class="drop-menu">
             <span class="line"></span>
             <span class="line"></span>
@@ -358,7 +358,9 @@
               индивидуально и формируем смету, исходя из вашего конкретного
               положения на рынке
             </p>
-            <a href="#" class="green-btn popup">Рассчитать стоимость</a>
+            <a href="#calculator-popup" class="green-btn popup"
+              >Рассчитать стоимость</a
+            >
           </div>
         </div>
       </div>
@@ -503,6 +505,7 @@
         </div>
       </div>
       <div class="bg">
+        <img src="img/buttons-bg.png" alt="" />
         <img src="img/buttons-bg.png" alt="" />
       </div>
     </div>
@@ -677,6 +680,44 @@
       }
 
       setInterval(scrollLogos, 30);
+
+      const logosContainer2 = document.querySelector(".why-us .bg");
+
+      logosContainer2.innerHTML += logosContainer2.innerHTML;
+
+      function scrollLogos2() {
+        logosContainer2.scrollLeft += 1;
+
+        if (logosContainer2.scrollLeft >= logosContainer2.scrollWidth / 2) {
+          logosContainer2.scrollLeft = 0;
+        }
+      }
+
+      setInterval(scrollLogos2, 30);
     </script>
+
+    <div
+      id="calculator-popup"
+      class="mfp-hide white-popup mfp-with-anim main-popup"
+    >
+      <div class="popup-body">
+        <button title="Close (Esc)" type="button" class="mfp-close"></button>
+        <form class="form">
+          <h3>Калькулятор бюджета</h3>
+          <div class="select-wrap">
+            <select>
+              <option aria-checked="">Регион</option>
+              <option value="2">Россия</option>
+              <option value="3">Казахстан</option>
+            </select>
+          </div>
+          <input type="text" placeholder="Охват" />
+          <input type="text" placeholder="Переходы на сайт" />
+          <input type="text" placeholder="Минимальный бюджет" />
+          <input type="text" placeholder="Оптимальный бюджет" />
+          <button class="green-btn" type="button">Рассчитать</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
