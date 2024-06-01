@@ -1,0 +1,25 @@
+<svg width="111" height="111" viewBox="0 0 111 111" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_368_1404)">
+<path d="M37.4769 77.6013L21.8257 70.25C20.0969 69.438 19.3537 67.3783 20.1657 65.6495L40.7495 21.8262C41.5615 20.0974 43.6212 19.3542 45.35 20.1662L89.1733 40.7499C90.9021 41.5619 91.6453 43.6216 90.8333 45.3504L83.4819 61.0016" stroke="#64FF03" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M62.1396 73.902L67.1196 87.7035" stroke="#64FF03" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M52.8437 73.3565C58.8944 76.1986 66.1034 73.5974 68.9454 67.5466C71.7874 61.4959 69.1863 54.2869 63.1355 51.4449C57.0848 48.6029 49.8758 51.204 47.0338 57.2548C44.1917 63.3055 46.7929 70.5145 52.8437 73.3565Z" stroke="#64FF03" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g clip-path="url(#clip1_368_1404)" filter="url(#filter0_f_368_1404)">
+<path d="M37.4769 77.6013L21.8257 70.25C20.0969 69.438 19.3537 67.3783 20.1657 65.6495L40.7495 21.8262C41.5615 20.0974 43.6212 19.3542 45.35 20.1662L89.1733 40.7499C90.9021 41.5619 91.6453 43.6216 90.8333 45.3504L83.4819 61.0016" stroke="#64FF03" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M62.1396 73.902L67.1196 87.7035" stroke="#64FF03" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M52.8437 73.3565C58.8944 76.1986 66.1034 73.5974 68.9454 67.5466C71.7874 61.4959 69.1863 54.2869 63.1355 51.4449C57.0848 48.6029 49.8758 51.204 47.0338 57.2548C44.1917 63.3055 46.7929 70.5145 52.8437 73.3565Z" stroke="#64FF03" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<filter id="filter0_f_368_1404" x="-9.90057" y="-9.90008" width="130.8" height="130.8" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="5.09701" result="effect1_foregroundBlur_368_1404"/>
+</filter>
+<clipPath id="clip0_368_1404">
+<rect width="83" height="83" fill="white" transform="translate(35.5801 0.293945) rotate(25.1593)"/>
+</clipPath>
+<clipPath id="clip1_368_1404">
+<rect width="83" height="83" fill="white" transform="translate(35.5801 0.293945) rotate(25.1593)"/>
+</clipPath>
+</defs>
+</svg>

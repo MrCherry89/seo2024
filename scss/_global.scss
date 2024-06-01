@@ -21,6 +21,7 @@ body {
   @include dir-col;
   @include justify-between;
   min-height: 100vh;
+  background: #10141c;
 }
 
 input,
